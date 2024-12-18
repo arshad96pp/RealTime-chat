@@ -1,0 +1,190 @@
+.app__layout {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(212, 212, 212);
+}
+.user_list_conytainer {
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #f1efef;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(223, 223, 223);
+    border-radius: 6px;
+  }
+}
+
+/* chat page  style */
+.chat__area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.message_view_section {
+  flex: 1 1 400px;
+  padding: 10px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #f1efef;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(223, 223, 223);
+    border-radius: 6px;
+  }
+}
+.message_sending_section {
+  height: 60px;
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.chat_input_wraper {
+  background-color: white;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0px 9px;
+}
+.chat_input_wraper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 12px;
+}
+.chat_input_wraper button {
+  background-color: rgb(69, 69, 248);
+  font-size: 12px;
+  padding: 7px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message_sender,
+.message_reciver {
+  display: block;
+  max-width: 200px;
+  width: fit-content;
+  color: white;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-bottom: 9px;
+  position: relative;
+}
+.message_sender {
+  background-color: rgb(69, 69, 248);
+  margin-left: auto;
+  border-radius: 13px 0px 13px 13px;
+}
+.message_reciver {
+  background-color: rgb(139, 139, 139);
+  text-align: left;
+  border-radius: 0px 13px 13px 13px;
+}
+.message_sender p,
+.message_reciver p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.header_timeStamp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.download_remove {
+  display: none !important;
+}
+
+label .MuiSvgIcon-root {
+  font-size: 18px !important;
+  margin-right: 10px;
+  color: rgb(107, 107, 107);
+}
+
+/* download pdf */
+.file-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 10px;
+  /* margin-bottom: 20px; */
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+}
+
+.file-info {
+  border-bottom: 1px solid #eee;
+  /* padding-bottom: 10px; */
+  /* margin-bottom: 10px; */
+}
+
+.file-info h2 {
+  margin: 0;
+  font-size: 10px;
+  color: #333;
+  max-width: 100px;
+}
+
+.file-info p {
+  margin: 0;
+  color: #666;
+  font-size: 10px;
+}
+
+.download-button a {
+  display: inline-block;
+  /* background-color: rgb(69, 69, 248); */
+  color: #fff;
+  text-decoration: none;
+  /* padding: 4px 4px; */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(69, 69, 248);
+}
+.download-button .MuiSvgIcon-root {
+  font-size: 14px !important;
+  color: rgb(69, 69, 248) !important;
+}
+
+.download-button a:hover {
+  background-color: rgb(69, 69, 248);
+}
+.download-button a:hover .MuiSvgIcon-root {
+  color: white !important;
+}
+
+.timeStamp {
+  font-size: 10px;
+  display: block;
+}

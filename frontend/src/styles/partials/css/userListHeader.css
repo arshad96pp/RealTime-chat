@@ -1,0 +1,11 @@
+.user_list_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.user_list_header h1 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
